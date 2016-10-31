@@ -1,0 +1,41 @@
+# This is the main configuration file for the MkDocs website.
+# Use hash-comments to comment out pages have not been written
+# Reference: http://www.mkdocs.org/user-guide/configuration/
+#
+site_name: OWF Learn / Git
+pages:
+- Home: index.md
+- 'Git Overview': overview.md
+- 'Install Git Software':
+  - 'Git Command Line':  'dev-env/command-line.md'
+  - 'Git GUI/Shell':  'dev-env/git-gui.md'
+  - 'SourceTree':  'dev-env/sourcetree.md'
+  - 'Eclipse EGit/JGit':  'dev-env/eclipse.md'
+- 'Configure Git': config.md
+- 'End-of-Line Issues': eol.md
+- 'Cloud-Hosted Git':
+  - 'GitHub':  'cloud/github.md'
+  - 'Bitbucket':  'cloud/bitbucket.md'
+- 'Simple Example': simple-example.md
+- 'Git Workflow':
+  - 'Feature Branch':  'workflow/feature-branch.md'
+  - 'Git Flow':  'workflow/git-flow.md'
+  - 'Branch Naming':  'workflow/branch-naming.md'
+  - 'Merge in Cloud':  'workflow/merge-in-cloud.md'
+  - 'Merge Locally':  'workflow/merge-locally.md'
+  - 'Merge Conflicts':  'workflow/merge-conflicts.md'
+- 'Common Git Tasks':
+   - 'Overview': 'tasks/overview.md'
+   - 'Initialize New Repo': 'tasks/new-repo.md'
+- 'Git for General Projects': git-general.md
+- 'Resources': resources.md
+theme: readthedocs
+repo_url:  https://github.com/OpenWaterFoundation/owf-learn-git
+site_description:  Open Water Foundation Learn Git training documentation
+site_author:  Open Water Foundation
+site_favicon:  OWF-Logo-Favicon-32x32.png
+copyright:  Copyright Open Water Foundation
+#extra_css:
+#- css/extra.css
+# Defaults to all JavaScript in the docs folder
+# extra_javascript:
