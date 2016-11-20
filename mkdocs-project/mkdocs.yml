@@ -27,6 +27,7 @@ pages:
 - 'Common Git Tasks':
    - 'Overview': 'tasks/overview.md'
    - 'Initialize New Repo': 'tasks/new-repo.md'
+- 'Git Messages': messages.md
 - 'Git for General Projects': git-general.md
 - 'Resources': resources.md
 theme: readthedocs
