@@ -1,6 +1,6 @@
 # Open Water Foundation / Learn Git
 
-This documentation provides resources to learn how to to use the Git revision control software,
+This documentation provides resources to learn how to to use the Git version control software,
 including how to install, configure, and use Git.
 
 This documentation has been written based on experience using Git at the Open Water Foundation and
@@ -10,7 +10,7 @@ is intended to cover different Git client software, cloud repositories, and comm
 
 The [Open Water Foundation](http://openwaterfoundation.org) is a 501(c)3 nonprofit social enterprise that focuses
 on developing and supporting open source software for water resources, so that organizations can make better decisions about water.
-OWF has created this documentation to educate its staff, other developers, and clients that use Git for revision control.
+OWF has created this documentation to educate its staff, other developers, and clients that use Git for version control.
 
 See also other [OWF learning resources](http://learn.openwaterfoundation.org).
 

@@ -7,12 +7,13 @@ pages:
 - Home: index.md
 - 'Git Overview': overview.md
 - 'Install Git Software':
-  - 'Git Command Line':  'dev-env/command-line.md'
-  - 'Git GUI/Shell':  'dev-env/git-gui.md'
-  - 'SourceTree':  'dev-env/sourcetree.md'
-  - 'Eclipse EGit/JGit':  'dev-env/eclipse.md'
-- 'Configure Git': config.md
+  - 'Overview':  'install/overview.md'
+  - 'Git Command Line':  'install/command-line.md'
+  - 'Git GUI/Shell':  'install/git-gui.md'
+  - 'SourceTree':  'install/sourcetree.md'
+  - 'Eclipse EGit/JGit':  'install/eclipse.md'
 - 'End-of-Line Issues': eol.md
+- 'Configure Git': config.md
 - 'Cloud-Hosted Git':
   - 'GitHub':  'cloud/github.md'
   - 'Bitbucket':  'cloud/bitbucket.md'
@@ -32,7 +33,7 @@ pages:
 - 'Resources': resources.md
 theme: readthedocs
 repo_url:  https://github.com/OpenWaterFoundation/owf-learn-git
-site_description:  Open Water Foundation Learn Git training documentation
+site_description:  Open Water Foundation Learn Git
 site_author:  Open Water Foundation
 site_favicon:  OWF-Logo-Favicon-32x32.png
 copyright:  Copyright Open Water Foundation
