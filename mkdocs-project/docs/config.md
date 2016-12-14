@@ -1,7 +1,10 @@
 # Configure Git
 
 Once Git has been installed it is necessary to set a few configuration properties.
-The configuration steps will need to be repeated for each operating system, including each virtual machine.
+The configuration steps will need to be repeated for each operating system, including each virtual machine,
+and potentially for each tool if software stores Git configuration in different locations
+(it is important as a software developer to know which Git configuration file(s) a software tool uses,
+especially if the standard configuration files are not used).
 Several configuration properties are set by default - only important changes are discussed here.
 See:
 

@@ -8,8 +8,7 @@ pages:
 - 'Git Overview': overview.md
 - 'Install Git Software':
   - 'Overview':  'install/overview.md'
-  - 'Git Command Line':  'install/command-line.md'
-  - 'Git GUI/Shell':  'install/git-gui.md'
+  - 'Git':  'install/git.md'
   - 'SourceTree':  'install/sourcetree.md'
   - 'Eclipse EGit/JGit':  'install/eclipse.md'
 - 'End-of-Line Issues': eol.md
