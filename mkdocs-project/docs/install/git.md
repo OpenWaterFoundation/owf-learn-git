@@ -8,7 +8,7 @@ See the [Getting Started - Installing Git](https://git-scm.com/book/en/v2/Gettin
 
 * [Install Git on Cygwin](#install-git-on-cygwin)
 * [Install Git on Linux](#install-git-on-linux)
-* [Install Git on Windows](#install-git-on-windows)
+* [Install Git on Windows](#install-git-on-windows-git-for-windows)
 
 ## Install Git on Cygwin
 
@@ -23,9 +23,14 @@ $ sudo apt-get update
 $ sudo apt-get install git-all
 ```
 
-## Install Git on Windows
+## Install Git on Windows (Git for Windows)
 
 Git for Windows is available as a standard installer and includes Git Bash and Git GUI.
+This software also installs a copy of [Minimialist GNU For Windows (MinGW)](http://www.mingw.org/wiki/Getting_Started),
+in order to provide command-line Bash shell functionality.
+This is relevant because other development environments, such as GCC on Windows may use another copy of MinGW.
+It is OK to have multiple versions of MinGW installed if disk space is available,
+but software developers will need to understand which MinGW shell is being used.
 
 Determine whether Git for Windows is installed by looking for Git in the ***Windows Start*** menu.
 
@@ -69,6 +74,33 @@ Do not use experimental features.
 
 After installing, Git BASH can be run from the start menu to provide a Linux-like terminal window to run Git commands.
 Git GUI can also be run to provide an interactive interface.
+
+The Git for Windows software install folder varies depending on the Git for Windows version,
+operating system, and user.
+To determine where the software is installed, open Git BASH and show the current folder.
+For example, the following output is from an older Windows 7 installation,
+and reviewing the installation folder does not show a MinGW folder (all files are in a `bin` folder).
+
+```sh
+$ git --version
+git version 1.9.4.mysysgit.2
+
+$ cd /
+$ pwd -W
+C:/Program Files (x86)/Git
+```
+
+The following is output from a Windows 10 installation.
+Reviewing the folders shows a `mingw64` folder, under which exist programs that can be run in BASH.
+
+```sh
+$ git --version
+git version 2.11.0.windows.1
+
+$ cd /
+$ pwd -W
+C:/Users/sam/AppData/Local/Programs/Git
+```
 
 ## Next Steps
 
