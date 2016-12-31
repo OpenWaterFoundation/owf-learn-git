@@ -7,10 +7,39 @@ The following are helpful cheat sheets:
 * [GitHub Git Cheat Sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
 
 The following is a list of common tasks that are explained below.
-Most of these tasks use the Git command line such as Git BASH.
+Most of these tasks use the Git command line such as Git Bash.
 
+* [Determine end-of-line for file in repository](#task-determine-end-of-line-for-file-in-repository)
 * [Determine whether remote repository is ahead of local](#task-determine-whether-remote-repository-is-ahead-of-local)
+* [Stage all added/removed/modified working files](#task-stage-all-addedremovedmodified-working-files)
 * [Unstage file(s) that should not be committed](#task-unstage-filess-that-should-not-be-committed)
+
+## Task - Determine end-of-line for file in repository
+
+**Scenario:**  You are dealing with end-of-line issues in the repository, for example due to developers
+collaborating and using different operating systems for development.
+It can be confusing to understand when the end-of-line is changed when using Git software
+and you want to confirm what is being used in the repository.
+
+**Solution:**
+
+An editor that shows binary end-of-file characters is needed and can be used as follows to edit working files.
+The file in the Git repository working files on the local disk can be examined.
+Or, view the file using the GitHub or Bitbucket website (or other online repo tool).
+Use the ***Raw*** feature of the website and then save to a local file
+(for example once the raw view in the browser is shown, use ***Ctrl-S*** or other feature to save the file to local disk.
+
+If using a development environment that provides the `vi` or `vim` editor, then use `vi -b filename` to edit in binary mode.
+Linefeed `LF` (`\n`) will not be displayed although the presence of separate lines indicates that line feed is present.
+Carriage return `CR` (`\r`) characters will be shown as `^M` at the end of lines
+if DOS-style `CRLF` is being used for the file, for example:
+
+![vi -b end-of-line example](overview-images/vi-b-end-of-line.png)
+
+Another option on Windows is [Notepad++](https://notepad-plus-plus.org/).  Use the ***View / Show Symbol / Show End of Line*** menu to toggle
+whether the end of line characters are shown, which will show, for example:
+
+![Notepad++ end-of-line example](overview-images/notepadpp-end-of-line.png)
 
 ## Task - Determine whether remote repository is ahead of local
 
@@ -84,7 +113,7 @@ Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean
 
 
-# 2b) OR, to show commits in all of the branches whose names end in `master` (such as `master` and `origin/master`):
+# 2b) OR, to show commits in all of the branches whose names end in 'master' (such as 'master' and 'origin/master'):
 git show-branch *master
 $ git status -uno
 On branch master
@@ -92,10 +121,27 @@ Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
 nothing to commit (use -u to show untracked files)
 ```
+## Task - Stage all added/removed/modified working files
+
+Git requires that changes to working files must be added to the staging area before they can be committed.
+Running `git status` shows a summary of files that have been added/deleted/modified,
+and which files have not yet been staged.  Note that new folders are shown but not the new files in those folders.
+The `git add` command can be used to add working files to the staging area and `git rm` can be used to indicate that files have been removed.
+However, it is convenient to use one command:
+
+```sh
+git add -A
+git add --all
+```
+
+From [`git add`](https://git-scm.com/docs/git-add) documentation:  "This adds, modifies, and removes index entries to match the working tree.
+If no `<pathspec>` is given when -A option is used, all files in the entire working tree are updated
+(old versions of Git used to limit the update to the current directory and its subdirectories)."
+Consequently, if an old version of Git is used, run from the root repository folder or specify the folder to process.
 
 ## Task - Unstage files(s) that should not be committed
 
-**Scenario**:  You ran `git add...` and some files were added to the staging area that should not have been.
+**Scenario:**  You ran `git add...` and some files were added to the staging area that should not have been.
 You removed the files, added to `.gitignore` etc. but need to make sure they won't get committed.
 
 **Solution:**

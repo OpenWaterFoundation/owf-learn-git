@@ -8,7 +8,7 @@ See the [Getting Started - Installing Git](https://git-scm.com/book/en/v2/Gettin
 
 * [Install Git on Cygwin](#install-git-on-cygwin)
 * [Install Git on Linux](#install-git-on-linux)
-* [Install Git on Windows](#install-git-on-windows-git-for-windows)
+* [Install Git on Windows (Git for Windows)](#install-git-on-windows-git-for-windows)
 
 ## Install Git on Cygwin
 
