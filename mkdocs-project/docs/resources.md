@@ -23,18 +23,26 @@ Use of the `git-completion.sh` and `git-prompt.sh` tools was described in the fo
 
 * [Udacity:  How to Use Git and GitHub](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
 
-The recommendation is to put the following in the `.bash_profile` consistent with the scripts in the following sections.
-Local modifications can be made as per preferences.
+The recommendation is to put the following in the software developer's `.bashrc` file.
+The following calls the `git-prompt` and `git-completion.bash` scripts that are described in the following two sections.
+Local modifications can be made by the developer.
 
 ```
-# START UDACITY GIT COURSE INSERT .bash_profile_course
 # Enable tab completion
 source ~/bin/git-completion.bash
 
-# colors!
-green="\[\033[0;32m\]"
+# Enable git-aware command prompt.
+# See:  http://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
+# https://tiswww.case.edu/php/chet/bash/bashref.html#Controlling-the-Prompt
+cyan="\[\033[0;36m\]"
 blue="\[\033[0;34m\]"
+green="\[\033[0;32m\]"
+lightblue="\[\033[1;34m\]"
+pink="\[\033[0;31m\]"
 purple="\[\033[0;35m\]"
+white="\[\033[1;37m\]"
+yellow="\[\033[1;33m\]"
+# reset switches back to regular color
 reset="\[\033[0m\]"
 
 # Change command prompt
@@ -43,8 +51,13 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # '\u' adds the name of the current user to the prompt
 # '\$(__git_ps1)' adds git-related stuff
 # '\W' adds the name of the current directory
-export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
-# END UDACITY GIT COURSE INSERT .bash_profile_course
+# Prompt will be:
+#  user (branch) directory $
+# where branch may be followed by:
+#  * if unstaged files
+#  + if staged files
+export PS1="$white\u$lightblue\$(__git_ps1)$yellow \W $ $reset"
+# END GIT INSERT
 ```
 
 ### Auto-Completion
