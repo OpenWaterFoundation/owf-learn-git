@@ -3,6 +3,17 @@
 **Note that end of line issues discussed below may not be much of an issue for some Git tool installs.
 For example [Git for Windows](../install/git#install-git-on-windows) installs with defaults appropriate for Windows.**
 
+This documentation contains the following sections:
+
+* [Background](#background)
+* [Use `.gitattributes` File to Control Line Endings](#use-gitattributes-file-to-control-line-endings)
+* [Additional Git Configuration](#additional-git-configuration)
+	+ [Global property:  `core.eol`](#global-property-coreeol)
+	+ [Global property:  `core.autocrlf`](#global-property-coreautocrlf)
+* [Avoiding Issues by Using Consistent Developer Environment](#avoiding-issues-by-using-consistent-developer-environment)
+
+## Background
+
 End of line characters for text files are different based on the operating system.
 Linux/Cygwin/Mac use line feed (`LF` indicated by the following character in code: `\n`)
 whereas Windows uses carriage return followed by line feed (`CRLF`, indicated by the following characters in code: `\r\n`).

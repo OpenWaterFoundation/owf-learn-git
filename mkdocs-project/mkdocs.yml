@@ -14,10 +14,12 @@ pages:
 - 'End-of-Line Issues': eol.md
 - 'Configure Git': config.md
 - 'Cloud-Hosted Git':
+  - 'Overview':  'cloud/overview.md'
   - 'GitHub':  'cloud/github.md'
   - 'Bitbucket':  'cloud/bitbucket.md'
 - 'Simple Example': simple-example.md
 - 'Git Workflow':
+  - 'Overview':  'workflow/overview.md'
   - 'Feature Branch':  'workflow/feature-branch.md'
   - 'Git Flow':  'workflow/git-flow.md'
   - 'Branch Naming':  'workflow/branch-naming.md'
@@ -27,7 +29,7 @@ pages:
 - 'Common Git Tasks':
    - 'Overview': 'tasks/overview.md'
    - 'Initialize New Repo': 'tasks/new-repo.md'
-- 'Git Messages': messages.md
+- 'Git Output Messages': output-messages.md
 - 'Git for General Projects': git-general.md
 - 'Resources': resources.md
 theme: readthedocs

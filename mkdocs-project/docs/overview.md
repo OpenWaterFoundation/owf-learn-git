@@ -8,6 +8,11 @@ Git software must be installed on the local computer, which allows interacting w
 and also integrates with Git hosted in the cloud such as
 [GitHub](http://github.com) and [BitBucket](https://bitbucket.org).
 
+This documentation contains the following sections:
+
+* [Git Account](#git-account)
+* [Git Resources](#git-resources)
+
 ## Git Account
 
 In order to use GitHub or Bitbucket, you must sign up for an account.

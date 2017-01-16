@@ -5,6 +5,11 @@ The following illustrates common tasks.
 
 **TODO smalers 2016-11-28 need to figure out whether repository should be used or are contrived examples below OK**
 
+This documentation contains the following sections:
+
+* [GitHub Repository Direct Edit for Single Developer](#github-repository-direct-edit-for-single-developer)
+* [Other Examples](#other-examples)
+
 ## GitHub Repository Direct Edit for Single Developer
 
 Some repositories are maintained by one people, with no edit conflicts.

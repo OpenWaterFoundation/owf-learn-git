@@ -4,7 +4,14 @@ This documentation provides resources to learn how to to use the Git version con
 including how to install, configure, and use Git.
 
 This documentation has been written based on experience using Git at the Open Water Foundation and
-is intended to cover different Git client software, cloud repositories, and common tasks.
+includes information about Git client software, cloud repositories, and common tasks.
+
+This documentation includes the following sections:
+
+* [About the Open Water Foundation](#about-the-open-water-foundation) - author and maintainer of this documentation
+* [How to Use this Documentation](#how-to-use-this-documentation) - overview of main sections
+* [License](#license)
+* [Source Repository on GitHub](#source-repository-on-github)
 
 ## About the Open Water Foundation
 
@@ -16,11 +23,24 @@ See also other [OWF learning resources](http://learn.openwaterfoundation.org).
 
 ## How to Use this Documentation
 
-The documentation is organized in order of information and tasks necessary to setup a development environment and
-use Git software.
+The documentation is organized in order of information and tasks necessary to install and use Git for version control of
+software and other content.
 
 This documentation is not intended to be a full reference for Git but focuses on important topics that
 will help a understand important technical concepts and be successful with Git.
+The following main sections are included in this documentation:
+
+* [Git Overview](overview)
+* [Install Git Software](install/overview)
+* [End of Line Issues](eol)
+* [Configure Git](config)
+* [Cloud-Hosted Git](cloud/overview)
+* [Simple Example](simple-example)
+* [Git Workflow](workflow/overview)
+* [Common Git Tasks](tasks/overview)
+* [Git Output Messages](output-messages)
+* [Git for General Projects](git-general)
+* [Resources](resources)
 
 ## License
 

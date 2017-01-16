@@ -2,7 +2,9 @@
 
 The following is a list of Git messages and explanation of how to respond.
 
-## End of Line Handling
+* [warning:  CRLF will be replaced...](#warning-crlf-will-be-replaced)
+
+## warning:  CRLF will be replaced...
 
 The following message may be displayed when adding files to the index, prior to committing changes:
 
