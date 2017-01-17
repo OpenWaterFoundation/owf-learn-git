@@ -8,8 +8,8 @@ template .gitignore and .gitattribute files in GitHub.
 This documentation includes the following sections:
 
 * [Bash Utilities](#bash-utilities)
-	+ [Auto-Completion](#auto-completion)
-	+ [Set Prompt to Indicate Repository Information](#set-prompt-to-indicate-repository-information)
+	+ [Auto-Completion with `git-completion.bash`](#auto-completion-with-git-completionbash)
+	+ [Set Prompt to Indicate Repository Information with `git-prompt.sh`](#set-prompt-to-indicate-repository-information-with-git-promptsh)
 
 ## Bash Utilities
 
@@ -17,15 +17,20 @@ The following are useful Bash utilities.
 Note that the utilities may need to be configured multiple times depending on development environment,
 for example for Cygwin, Linux, Git Bash.
 
-### Udacity Training
-
 Use of the `git-completion.sh` and `git-prompt.sh` tools was described in the following Udacity Git training course:
+[Udacity:  How to Use Git and GitHub](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
 
-* [Udacity:  How to Use Git and GitHub](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
-
-The recommendation is to put the following in the software developer's `.bashrc` file.
-The following calls the `git-prompt` and `git-completion.bash` scripts that are described in the following two sections.
+The recommendation is to put the following in the software developer's `.bashrc` file (executed for interactive shells),
+where the `.bashrc` should be sourced from the `.bash_profile` or `.profile` (`source ~/.bashrc`).
+The following calls the `git-completion.bash` and `git-prompt.sh`
+scripts that are described in the following subsections.
 Local modifications can be made by the developer.
+The following example assumes that the scripts are saved to the `~/bin` folder for the software developer.
+
+**Note that Git for Windows (Git Bash) may include this already and so there may only be a need to customize as desired
+by editing the `.bash_profile`.**
+
+The functionality has been tested in Cygwin, Git Bash, and Debian Linux.
 
 ```
 # Enable tab completion
@@ -60,16 +65,23 @@ export PS1="$white\u$lightblue\$(__git_ps1)$yellow \W $ $reset"
 # END GIT INSERT
 ```
 
-### Auto-Completion
+The resulting command prompt appears similar to the following:
+
+![git prompt](resources-images/git-prompt.png)
+
+### Auto-Completion with `git-completion.bash`
 
 To enable auto-completion of Git commands, use the `git-competion.bash` script.  See:
 
 * [Git Basics - Tips and Tricks](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks)
+* [git-completion.bash](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash)
 
 
-### Set Prompt to Indicate Repository Information
+### Set Prompt to Indicate Repository Information with `git-prompt.sh`
 
 It can be confusing to know what branch is being edited with command-line tools,
-especially after being away from a project awhile.  The `git-prompt` bash script can help:o
+especially after being away from a project for awhile.  The `git-prompt` bash script provides context when
+working on the command line in a specific folder.
+Download from the following:
 
 * [git-prompt.sh](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)
