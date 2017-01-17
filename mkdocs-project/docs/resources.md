@@ -1,7 +1,7 @@
 # Git Resources
 
-Need to list here useful Git resources including third-party cheat sheets,
-template .gitignore and .gitattribute files in GitHub.
+**TODO smalers 2017-01-16 Need to list here useful Git resources including third-party cheat sheets,
+template .gitignore and .gitattribute files in GitHub.**
 
 **TODO smalers 2017-01-16 maybe include this in overview**
 
@@ -13,11 +13,11 @@ This documentation includes the following sections:
 
 ## Bash Utilities
 
-The following are useful Bash utilities.
+The following are useful `bash` utilities.
 Note that the utilities may need to be configured multiple times depending on development environment,
 for example for Cygwin, Linux, Git Bash.
 
-Use of the `git-completion.sh` and `git-prompt.sh` tools was described in the following Udacity Git training course:
+Use of the `git-completion.sh` and `git-prompt.sh` tools is described in the following Udacity Git training course:
 [Udacity:  How to Use Git and GitHub](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
 
 The recommendation is to put the following in the software developer's `.bashrc` file (executed for interactive shells),
@@ -25,10 +25,10 @@ where the `.bashrc` should be sourced from the `.bash_profile` or `.profile` (`s
 The following calls the `git-completion.bash` and `git-prompt.sh`
 scripts that are described in the following subsections.
 Local modifications can be made by the developer.
-The following example assumes that the scripts are saved to the `~/bin` folder for the software developer.
+The following example assumes that the scripts are saved in the software developer's `~/bin` folder.
 
-**Note that Git for Windows (Git Bash) may include this already and so there may only be a need to customize as desired
-by editing the `.bash_profile`.**
+**Note that Git for Windows (Git Bash) may already include the following scripts therefore only modifications are needed
+if default behavior is not as desired (by editing the `.bash_profile`).**
 
 The functionality has been tested in Cygwin, Git Bash, and Debian Linux.
 
