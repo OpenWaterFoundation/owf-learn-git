@@ -23,8 +23,11 @@ The development team and workflow for a project will determine what works best.
 * issue type
 	+ using an issue type such as `feature`, `bug`, `hotfix`, `test`, `refactor`, etc. may be helpful
 	+ however, an issue may evolve from bug to feature so assigning a type may be confusing over the lifetime of the issue
+	(but this may not be an issue for simple items)
 * issue number
 	+ need this at a minimum to link to the issue tracker, consistent with GitHub, Bitbucket, etc. features
+	+ using issue number alone can cause Git commands problems since it may not know whether it is a branch name
+	or SHA-1 hash number corresponding to a commit (so recommend issue type and/or topic)
 * developer ID
 	+ not recommended because it can be found in the issue tracker, more than one person may work on the issue,
 	and the assignment of a lead developer may change over time
@@ -33,7 +36,6 @@ The development team and workflow for a project will determine what works best.
 
 Examples of suitable branch names when using an issue tracker are:
 
-* `1234`
 * `1234-fix-main-menu`
 * `bug-1234-crash-at-start`
 
