@@ -6,7 +6,8 @@ that is selected by the core software development team (e.g., "stable" branch mi
 
 Branches that will generally not be public will have less of a chance to cause issues during collaboration,
 especially if the branches are never pushed to a cloud repository.
-However, the branch name will often show up in commit messages and therefore it is helpful to adopt a minimal naming convention.
+However, the branch name will often show up in commit messages,
+such as a merge commit and pull request, and therefore it is helpful to adopt a minimal naming convention.
 
 Assume that issues (requests and bug reports) are tracked in an issue tracker such as GitHub's issue tracker.
 Each issue will then have an issue number.
@@ -21,7 +22,7 @@ The development team and workflow for a project will determine what works best.
 	are some known issues with using `/` so be safe and use a dash
 * issue type
 	+ using an issue type such as `feature`, `bug`, `hotfix`, `test`, `refactor`, etc. may be helpful
-	+ however, an issue may evolve from bug to feature so assigning a type may be confusing
+	+ however, an issue may evolve from bug to feature so assigning a type may be confusing over the lifetime of the issue
 * issue number
 	+ need this at a minimum to link to the issue tracker, consistent with GitHub, Bitbucket, etc. features
 * developer ID
@@ -30,10 +31,11 @@ The development team and workflow for a project will determine what works best.
 * topic
 	+ it may be helpful to include a short topic to help quickly understand the focus of the issue and not get lost in issue numbers
 
-Examples of suitable branch names are:
+Examples of suitable branch names when using an issue tracker are:
 
 * `1234`
 * `1234-fix-main-menu`
 * `bug-1234-crash-at-start`
 
+If an issue tracker is not used, then the issue type and topic are more important for context.
 Again, the approach adopted should be determined based on what works for the team.
