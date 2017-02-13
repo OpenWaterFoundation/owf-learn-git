@@ -8,17 +8,30 @@ Git software must be installed on the local computer, which allows interacting w
 and also integrates with Git hosted in the cloud such as
 [GitHub](http://github.com) and [BitBucket](https://bitbucket.org).
 
-This documentation contains the following sections:
+This page of the documentation contains the following sections:
 
 * [Git Account](#git-account)
 * [Git Resources](#git-resources)
 
 ## Git Account
 
-In order to use GitHub or Bitbucket, you must sign up for an account.
-In general the account is associated with a person, and the email that is used will be associated with an organization.
+Git can be used locally on any computer, but is generally used with a cloud-hosted server,
+to facilitate collaboration between developers.
+In order to use cloud services, you must sign up for an account.
+In general the account is associated with a person,
+and the email that is used may or may not be associated with an organization.
 Personal repositories can be created and may incur a cost of not public (open source).
 Repositories associated with an organization are paid for by the organization.
+The following are popular cloud repository hosting services,
+and will be referenced throughout this documentation:
+
+* [Bitbucket](https://bitbucket.org/) - provided by Atlassian, which also provides other software development services
+* [GitHub](https://github.com) - provides a variety of cloud-hosted services, integrated with Git for version control of content
+* [GitLab](https://gitlab.com)
+
+The service for a particular software project is defined by the leaders of that software project.
+Integration of the local Git software with the cloud services is consistent for basic functionality.
+However, each provider may also provide additional tools as software installations and on the websites.
 
 ## Git Resources
 

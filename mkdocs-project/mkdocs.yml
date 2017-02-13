@@ -23,9 +23,9 @@ pages:
   - 'Feature Branch':  'workflow/feature-branch.md'
   - 'Git Flow':  'workflow/git-flow.md'
   - 'Branch Naming':  'workflow/branch-naming.md'
-  - 'Merge in Cloud':  'workflow/merge-in-cloud.md'
-  - 'Merge Locally':  'workflow/merge-locally.md'
-  - 'Merge Conflicts':  'workflow/merge-conflicts.md'
+  - 'Merge via Issue Suggestion':  'workflow/merge-via-issue-suggestion.md'
+  - 'Merge via Change Set':  'workflow/merge-via-change-set.md'
+  - 'Merge via Pull Request':  'workflow/merge-via-pull-request.md'
 - 'Common Git Tasks':
    - 'Overview': 'tasks/overview.md'
    - 'Initialize New Repo': 'tasks/new-repo.md'

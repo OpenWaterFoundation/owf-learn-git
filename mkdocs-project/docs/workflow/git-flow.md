@@ -1,3 +1,7 @@
 # Git Workflow / Git Flow
 
-Need to describe the Git Flow approach.
+Git Flow provides tools to implement
+["A successful Git branching model by Vincent Driessen"](http://nvie.com/posts/a-successful-git-branching-model/).
+
+
+See the [Git Flow website](https://datasift.github.io/gitflow/IntroducingGitFlow.html).
