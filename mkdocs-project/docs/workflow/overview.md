@@ -13,7 +13,8 @@ This documentation includes the following sections:
 		- [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/) - often-referenced model by Vincent Driessen,
 		where the master branch is "stable" and a development branch is created for ongoing development
 		- [Jeremy Helms Gist on Branching](https://gist.github.com/digitaljhelms/4287848) - the above, with some different naming conventions,
-		appealing because the "master" branch is the development branch (rather than stable) and a "stable"
+		appealing because the "master" branch is the development branch (rather than stable) and a "stable" branch is used for stable releases
+		after integration testing
 	+ [Feature Branch](feature-branch) - simple approach to use feature/bug fix branches off of master
 	+ [Git Flow](git-flow) - comprehensive implementation of Vincent Driessen's model with helper scripts
 * Branching (a way to do work in an isolated sandbox and then merge back into the master branch):
