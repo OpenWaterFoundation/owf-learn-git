@@ -22,22 +22,30 @@ The development team and workflow for a project will determine what works best.
 	are some known issues with using `/` so be safe and use a dash
 * issue type
 	+ using an issue type such as `feature`, `bug`, `hotfix`, `test`, `refactor`, etc. may be helpful
-	+ however, an issue may evolve from bug to feature so assigning a type may be confusing over the lifetime of the issue
-	(but this may not be an issue for simple items)
+	+ however, an issue may evolve from bug to feature so assigning a type as a primary part of the identifier
+	may be confusing over the lifetime of the issue (but this may not be an issue for simple items)
+	+ can include an issue type keyword in the subject below rather than requiring
 * issue number
 	+ need this at a minimum to link to the issue tracker, consistent with GitHub, Bitbucket, etc. features
-	+ using issue number alone can cause Git commands problems since it may not know whether it is a branch name
-	or SHA-1 hash number corresponding to a commit (so recommend issue type and/or topic)
+	+ using issue number alone can cause Git commands problems since git may not know whether the number is a branch name
+	or SHA-1 hash number corresponding to a commit (so recommend including a subject)
 * developer ID
 	+ not recommended because it can be found in the issue tracker, more than one person may work on the issue,
-	and the assignment of a lead developer may change over time
-* topic
-	+ it may be helpful to include a short topic to help quickly understand the focus of the issue and not get lost in issue numbers
+	and the assignment of a developer may change over time
+* subject
+	+ it may be helpful to include a short subject (topic) to help quickly understand the focus of the issue and not get lost in issue numbers
 
 Examples of suitable branch names when using an issue tracker are:
 
-* `1234-fix-main-menu`
+* `1234-add-save-to-main-menu`
 * `bug-1234-crash-at-start`
+* `1234-bug-crash-at-start`
 
-If an issue tracker is not used, then the issue type and topic are more important for context.
+The remote branch name should be consistent if possible, for example:
+
+```text
+origin/1234-add-save-to-main-menu
+```
+
+If an issue tracker is not used, then the issue type and subject are more important for context.
 Again, the approach adopted should be determined based on what works for the team.
