@@ -13,18 +13,22 @@ This documentation includes the following sections:
 
 ## Bash Utilities
 
-The following are useful `bash` utilities.
-Note that the utilities may need to be configured multiple times depending on development environment,
-for example for Cygwin, Linux, Git Bash.
+The following are useful `bash` utilities to enhance the Git experience.
+The utilities will need to be configured in each independent development environment,
+for example for Cygwin, Linux, Git Bash, and each virtual machine that may be configured.
 
 Use of the `git-completion.sh` and `git-prompt.sh` tools is described in the following Udacity Git training course:
 [Udacity:  How to Use Git and GitHub](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
 
-The recommendation is to put the following in the software developer's `.bashrc` file (executed for interactive shells),
+The recommendation is to enable the `git-completion` and `git-prompt` scripts in the software developer's
+`.bashrc` file (executed for interactive shells),
 where the `.bashrc` should be sourced from the `.bash_profile` or `.profile` (`source ~/.bashrc`).
 The following calls the `git-completion.bash` and `git-prompt.sh`
 scripts that are described in the following subsections.
-Local modifications can be made by the developer.
+The following example illustrates saving the scripts in the user's `~/home/bin` folder but the
+scripts could also be named with a leading period and be saved in the home folder as a hidden file
+(developer needs to decide how to configure their environment).
+Local modifications can be made by the developer, for example to customize the prompt content and colors.
 The following example assumes that the scripts are saved in the software developer's `~/bin` folder.
 
 **Note that Git for Windows (Git Bash) may already include the following scripts therefore only modifications are needed
@@ -33,7 +37,7 @@ if default behavior is not as desired (by editing the `.bash_profile`).**
 The functionality has been tested in Cygwin, Git Bash, and Debian Linux.
 
 ```
-# Enable tab completion
+# Enable tab completion for Git commands
 source ~/bin/git-completion.bash
 
 # Enable git-aware command prompt.
@@ -50,7 +54,7 @@ yellow="\[\033[1;33m\]"
 # reset switches back to regular color
 reset="\[\033[0m\]"
 
-# Change command prompt
+# Change command prompt to display the current Git branch and whether any changes have been made
 source ~/bin/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 # '\u' adds the name of the current user to the prompt
@@ -71,7 +75,8 @@ The resulting command prompt appears similar to the following:
 
 ### Auto-Completion with `git-completion.bash`
 
-To enable auto-completion of Git commands, use the `git-competion.bash` script.  See:
+The complete example in the previous section uses the `git-completion.sh` script
+to enable auto-completion of Git commands.  See the following original sources describing this script:
 
 * [Git Basics - Tips and Tricks](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks)
 * [git-completion.bash](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash)
@@ -80,8 +85,8 @@ To enable auto-completion of Git commands, use the `git-competion.bash` script. 
 ### Set Prompt to Indicate Repository Information with `git-prompt.sh`
 
 It can be confusing to know what branch is being edited with command-line tools,
-especially after being away from a project for awhile.  The `git-prompt` bash script provides context when
-working on the command line in a specific folder.
-Download from the following:
+especially after being away from a project for awhile.  The `git-prompt` bash script provides context 
+by showing the Git branch in the shell prompt.
+The following provides the original `git-prompt.sh` script:
 
 * [git-prompt.sh](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)
