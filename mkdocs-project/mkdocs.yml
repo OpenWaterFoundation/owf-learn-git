@@ -2,7 +2,7 @@
 # Use hash-comments to comment out pages have not been written
 # Reference: http://www.mkdocs.org/user-guide/configuration/
 #
-site_name: OWF Learn / Git
+site_name: OWF / Learn Git
 pages:
 - Home: index.md
 - 'Git Overview': overview.md
@@ -32,13 +32,12 @@ pages:
 - 'Git Output Messages': output-messages.md
 - 'Git for General Projects': git-general.md
 - 'Resources': resources.md
-theme: readthedocs
-repo_url:  https://github.com/OpenWaterFoundation/owf-learn-git
+theme: material
+# Comment out because don't want to allow editing through interface
+#repo_url:  https://github.com/OpenWaterFoundation/owf-learn-git
 site_description:  Open Water Foundation Learn Git
 site_author:  Open Water Foundation
-site_favicon:  OWF-Logo-Favicon-32x32.png
+site_favicon:  images/OWF-Logo-Favicon-32x32.png
 copyright:  Copyright Open Water Foundation
-#extra_css:
-#- css/extra.css
-# Defaults to all JavaScript in the docs folder
-# extra_javascript:
+extra_css:
+- css/extra-material-theme.css

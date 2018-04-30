@@ -15,6 +15,8 @@ Most of these tasks use the Git command line such as Git Bash.
 * [Stage all added/removed/modified working files](#task-stage-all-addedremovedmodified-working-files)
 * [Unstage file(s) that should not be committed](#task-unstage-filess-that-should-not-be-committed)
 
+------
+
 ## Task - Determine end-of-line for file in repository
 
 **Scenario:**  You are dealing with end-of-line issues in the repository, for example due to developers

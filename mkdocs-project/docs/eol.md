@@ -12,6 +12,8 @@ This documentation contains the following sections:
 	+ [Global property:  `core.autocrlf`](#global-property-coreautocrlf)
 * [Avoiding Issues by Using Consistent Developer Environment](#avoiding-issues-by-using-consistent-developer-environment)
 
+----------------
+
 ## Background
 
 End of line characters for text files are different based on the operating system.
