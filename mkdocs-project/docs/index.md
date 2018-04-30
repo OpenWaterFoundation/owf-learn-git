@@ -13,6 +13,8 @@ This page of the documentation includes the following sections:
 * [License](#license) - license for this documentation website
 * [Source Repository on GitHub](#source-repository-on-github) - source files for this website
 
+---------------
+
 ## About the Open Water Foundation
 
 The [Open Water Foundation](http://openwaterfoundation.org) is a 501(c)3 nonprofit social enterprise that focuses
@@ -44,7 +46,7 @@ The following main sections are included in this documentation:
 
 ## License
 
-The OWF Learn Git website content and examples are licenses under the
+The OWF Learn Git website content and examples are licensed under the
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0).
 
 ## Source Repository on GitHub

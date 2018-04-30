@@ -2,7 +2,6 @@
 #
 # Copy the site/* contents to the learn.openwaterfoundation.org website
 # - replace all the files on the web with local files
-# - location is fortran.openwaterfoundation.org/owf-learn-git
 # - must specify Amazon profile
 
 # Set --dryrun to test before actually doing

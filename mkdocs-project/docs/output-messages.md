@@ -6,6 +6,8 @@ The following is a list of Git messages and explanation of how to respond.
 * [warning:  CRLF will be replaced by LF...](#warning-crlf-will-be-replaced-by-lf)
 * [warning:  LF will be replaced by CRLF...](#warning-lf-will-be-replaced-by-crlf)
 
+--------------
+
 ## Deletion of directory ... failed ##
 
 The following message may be displayed when trying to checkout a branch, such as the `master` branch:

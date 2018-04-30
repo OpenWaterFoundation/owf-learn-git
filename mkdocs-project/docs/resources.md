@@ -1,15 +1,12 @@
 # Git Resources
 
-**TODO smalers 2017-01-16 Need to list here useful Git resources including third-party cheat sheets,
-template .gitignore and .gitattribute files in GitHub.**
-
-**TODO smalers 2017-01-16 maybe include this in overview**
-
 This documentation includes the following sections:
 
 * [Bash Utilities](#bash-utilities)
 	+ [Auto-Completion with `git-completion.bash`](#auto-completion-with-git-completionbash)
 	+ [Set Prompt to Indicate Repository Information with `git-prompt.sh`](#set-prompt-to-indicate-repository-information-with-git-promptsh)
+
+------------------
 
 ## Bash Utilities
 
@@ -89,18 +86,18 @@ The resulting command prompt appears similar to the following:
 
 ### Auto-Completion with `git-completion.bash`
 
-The complete example in the previous section uses the `git-completion.sh` script
+The complete example in the previous section uses the `git-completion.bash` script
 to enable auto-completion of Git commands.  See the following original sources describing this script:
 
 * [Git Basics - Tips and Tricks](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks)
-* [git-completion.bash](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash)
+* [git-completion.bash](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash) - save to the `~/bin` folder to enable consistent with the above configuration
 
 
 ### Set Prompt to Indicate Repository Information with `git-prompt.sh`
 
 It can be confusing to know what branch is being edited with command-line tools,
-especially after being away from a project for awhile.  The `git-prompt` bash script provides context 
+especially after being away from a project for awhile.  The `git-prompt.sh` shell script provides context 
 by showing the Git branch in the shell prompt.
 The following provides the original `git-prompt.sh` script:
 
-* [git-prompt.sh](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)
+* [git-prompt.sh](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh) - save to the `~/bin` folder to enable consistent with the above configuration
