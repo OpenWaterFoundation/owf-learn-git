@@ -17,11 +17,11 @@ This page of the documentation includes the following sections:
 
 ## About the Open Water Foundation
 
-The [Open Water Foundation](http://openwaterfoundation.org) is a 501(c)3 nonprofit social enterprise that focuses
+The [Open Water Foundation](https://openwaterfoundation.org) is a 501(c)3 nonprofit social enterprise that focuses
 on developing and supporting open source software for water resources, so that organizations can make better decisions about water.
 OWF has created this documentation to educate its staff, other developers, and clients that use Git for version control.
 
-See also other [OWF learning resources](http://learn.openwaterfoundation.org).
+See also other [OWF learning resources](https://learn.openwaterfoundation.org).
 
 ## How to Use this Documentation
 
@@ -55,4 +55,4 @@ The source files for this documentation are maintained in a GitHub repository:  
 
 ## MkDocs
 
-This documentation is prepared using MkDocs.  For full MkDocs documentation visit [mkdocs.org](http://mkdocs.org/).
+This documentation is prepared using MkDocs.  For full MkDocs documentation visit [mkdocs.org](https://mkdocs.org/).
